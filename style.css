@@ -1,0 +1,161 @@
+:root {
+    --cor1: #FFFFFF;
+    --cor2: #C0C0C0;
+    --cor3: #167BF7;
+    --cor4: #00030C;
+    --fonte1: 'Inter';
+    --azul-efeito: #73adf3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor4);
+    color: var(--cor1);
+    font-family: var(--fonte1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.principal {
+    background-image: url("imgs/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--cor3);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor1);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor1);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cor2);
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor1);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cor2);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--cor1);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--cor1);
+}
+
+.rodape {
+    text-align: center;
+}
+
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.lista__link {
+    list-style: none;
+    margin: 2em 1em;
+}
+
+.lista_botao {
+    text-decoration: none;
+    color: var(--cor1);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.rodape__texto {
+    font-size: 12px;
+    color: var(--cor2);
+    font-weight: 400;
+    margin: 1.5em;
+}
+
+.lista_botao:hover {
+    color: var(--cor3);
+}
+
+.lista_botao:active {
+    color: var(--cor2);
+}
+
+.container__botao:hover {
+    background-color: var(--azul-efeito);
+    color: var(--cor4);
+}
